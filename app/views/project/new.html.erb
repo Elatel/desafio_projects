@@ -1,0 +1,23 @@
+
+<div class="card">
+    <div class="card-body">
+        <form method="post" action="/project" id="create_project">
+            <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+            <h2>Nombre</h2>
+            <input name="name" >
+            <h2>Descripcion</h2>
+            <input name="description" >
+            <h2>Fecha de Comienzo</h2>
+            <input name="begining" type="date">
+            <h2>Fecha de Termino</h2>
+            <input name="ending" type="date">
+            <h2>Estado</h2>
+            <select name="state">
+                <option value="propuesta">propuesta</option>
+                <option value="en progreso">en progreso</option>
+                <option value="terminado">terminado</option>
+            </select>
+            <input type="submit" value="enviar">
+        </form>
+    </div>
+  </div>
